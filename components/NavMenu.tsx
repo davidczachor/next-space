@@ -4,13 +4,14 @@ import Link from 'next/link'
 import SignInButton from './ui/SignInButton'
 import AuthCheck from './auth/AuthCheck'
 import SignOutbutton from './ui/SignOutButton'
+import logo from '../public/logo.png'
 
 export default function NavMenu() {
     return (
         <nav className={styles.nav}>
             <Link href='/'>
                 <Image
-                    src='/public/logo.svg'
+                    src={logo}
                     width={216}
                     height={30}
                     alt='NextSpace Logo'
