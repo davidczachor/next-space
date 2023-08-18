@@ -6,11 +6,6 @@ import Link from 'next/link'
 
 export default function SignInButton() {
     const { data: session, status } = useSession()
-
-    if (status === 'loading') {
-        return <>...</>
-    }
-
     if (status === 'authenticated') {
         return (
             <Link href='/dashboard'>
